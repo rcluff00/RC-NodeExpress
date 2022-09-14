@@ -8,7 +8,7 @@ const logger = require('morgan')
 const app = express()
 
 // load middlware
-// app.use(express.static('public'))
+app.use(express.static('public'))
 
 // bodyParse
 // helmet
