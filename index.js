@@ -24,9 +24,9 @@ app.get('/api/v1/logs?courseId=4690&uvuId=10111111', (req, res, err) => {
 
 // List (get all)
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+// app.get('/', (req, res) => {
+//   res.send('Hello World!')
+// })
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
