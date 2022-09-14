@@ -14,8 +14,9 @@ const app = express()
 // Read (get one)
 // /logs?courseId=4690&uvuId=10111111
 app.get('/api/v1/logs', (req, res, err) => {
-  const courseId = req.param('courseId')
-  const uvuId = req.param('uvuId')
+  // const courseId = req.param('courseId')
+  // const uvuId = req.param('uvuId')
+  const { courseId, uvuId } = req.param()
   res.send(`Get logs ${courseId} ${uvuId}`)
 
   // get the data from the json file
