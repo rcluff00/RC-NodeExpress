@@ -12,7 +12,7 @@ const app = express()
 
 // bodyParse
 // helmet
-app.use(logger)
+app.use(logger('dev'))
 
 // REST endpoints/routes
 // Create (post)
