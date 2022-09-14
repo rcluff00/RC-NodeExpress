@@ -1,5 +1,6 @@
 console.log('Loading server...')
 const PORT = 3000
+const db = require('db.json')
 
 const express = require('express')
 
@@ -12,7 +13,7 @@ const app = express()
 
 // Read (get one)
 // /logs?courseId=4690&uvuId=10111111
-app.get('/', (req, res, err) => {
+app.get('/api/v1/logs?courseId=4690&uvuId=10111111', (req, res, err) => {
   const courseId = req.param('courseId')
   const uvuId = req.param('uvuId')
   res.send(`get logs ${courseId} ${uvuId}`)
