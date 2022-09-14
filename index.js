@@ -7,7 +7,7 @@ const express = require('express')
 const app = express()
 
 // load middlware
-app.use(express.static('public'))
+// app.use(express.static('public'))
 
 // REST endpoints/routes
 // Create (post)
