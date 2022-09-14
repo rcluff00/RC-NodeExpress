@@ -22,10 +22,12 @@ app.use(express.static('public'))
 // /api/v1/logs?courseId=4690&uvuId=10111111
 // api/v1/logs
 app.get('/api/v1/logs?courseId=4690&uvuId=10111111', (req, res, err) => {
-  const courseId = req.param('courseId')
-  const uvuId = req.param('uvuId')
+  let test = res
+  // const courseId = req.param('courseId')
+  // const uvuId = req.param('uvuId')
   // const { courseId, uvuId } = req.param()
-  res.send(`Get logs ${courseId} ${uvuId}`)
+  // res.send(`Get logs ${courseId} ${uvuId}`)
+  res.send(`test res: ${test}`)
 
   // get the data from the json file
   // fileter for only wha tyou need
