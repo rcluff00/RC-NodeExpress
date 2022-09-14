@@ -18,7 +18,7 @@ app.get('/api/v1/logs', (req, res, err) => {
   const uvuId = req.param('uvuId')
   res.send(`Get logs ${courseId} ${uvuId}`)
 
-  //get the data from the json file
+  // get the data from the json file
   // fileter for only wha tyou need
   // send it back
 })
@@ -30,6 +30,8 @@ app.post('/', (req, res) => {
   // change db
   // write to file
   // return id
+  // return
+  // TODO after get post working, change to put here and on client
 })
 
 // Delete
