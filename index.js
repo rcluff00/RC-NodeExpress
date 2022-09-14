@@ -21,7 +21,7 @@ app.use(express.static('public'))
 // /logs?courseId=4690&uvuId=10111111
 // /api/v1/logs?courseId=4690&uvuId=10111111
 // api/v1/logs
-app.get('/api/v1/logs?courseId=4690&uvuId=10111111', (req, res, err) => {
+app.get('/api/v1/logs', (req, res, err) => {
   let test = res
   // const courseId = req.param('courseId')
   // const uvuId = req.param('uvuId')
