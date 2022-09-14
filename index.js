@@ -24,9 +24,8 @@ app.use(logger('dev'))
 app.get('/api/v1/logs', (req, res, err) => {
   // const courseId = req.param('courseId')
   // const uvuId = req.param('uvuId')
-  // const { courseId, uvuId } = req.param()
-  // res.send(`Get logs ${courseId} ${uvuId}`)
-  res.send(`test res: ${res}`)
+  const { courseId, uvuId } = req.param()
+  res.send(`Get logs ${courseId} ${uvuId}`)
 
   // get the data from the json file
   // fileter for only wha tyou need
