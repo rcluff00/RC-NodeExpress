@@ -8,11 +8,11 @@ const logger = require('morgan')
 const app = express()
 
 // load middlware
+app.use(logger('dev'))
 app.use(express.static('public'))
 
 // bodyParse
 // helmet
-app.use(logger('dev'))
 
 // REST endpoints/routes
 // Create (post)
