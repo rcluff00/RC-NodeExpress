@@ -34,15 +34,15 @@ app.get('/api/v1/logs', (req, res, err) => {
 })
 
 // Update (put)
-app.post('/', (req, res) => {
-  res.send('Got a POST request')
+// app.post('/', (req, res) => {
+//   res.send('Got a POST request')
 
-  // change db
-  // write to file
-  // return id
-  // return
-  // TODO after get post working, change to put here and on client
-})
+//   // change db
+//   // write to file
+//   // return id
+//   // return
+//   // TODO after get post working, change to put here and on client
+// })
 
 // Delete
 
