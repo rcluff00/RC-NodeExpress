@@ -7,12 +7,15 @@ const express = require('express')
 const app = express()
 
 // load middlware
+app.use(express.static('public'))
 
 // REST endpoints/routes
 // Create (post)
 
 // Read (get one)
 // /logs?courseId=4690&uvuId=10111111
+// /api/v1/logs?courseId=4690&uvuId=10111111
+// api/v1/logs
 app.get('/api/v1/logs', (req, res, err) => {
   // const courseId = req.param('courseId')
   // const uvuId = req.param('uvuId')
