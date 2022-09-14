@@ -3,11 +3,16 @@ const PORT = 3000
 const db = require('./db.json')
 
 const express = require('express')
+const logger = require('morgan')
 
 const app = express()
 
 // load middlware
 // app.use(express.static('public'))
+
+// bodyParse
+// helmet
+app.use(logger)
 
 // REST endpoints/routes
 // Create (post)
@@ -16,7 +21,7 @@ const app = express()
 // /logs?courseId=4690&uvuId=10111111
 // /api/v1/logs?courseId=4690&uvuId=10111111
 // api/v1/logs
-app.get('api/v1/logs?courseId=4690&uvuId=10111111', (req, res, err) => {
+app.get('/api/v1/logs?courseId=4690&uvuId=10111111', (req, res, err) => {
   const courseId = req.param('courseId')
   const uvuId = req.param('uvuId')
   // const { courseId, uvuId } = req.param()
