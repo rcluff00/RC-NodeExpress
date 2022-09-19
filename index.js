@@ -66,7 +66,6 @@ app.listen(PORT, () => {
 function gracefulShutdown() {
   // Clean up and prepare to die
   // ...
-
   server.close(() => {
     console.log('Server is closed')
   })
