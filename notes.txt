@@ -15,3 +15,21 @@ If a static file has the same path as a .get() path:
   // doesn't have to search through all the routes to check for
   // a matching path
 
+404 page
+  app.get('*', (req, res, err) => {
+    res.send(`File not found. Sorry bud.`)    // Prints string
+    res.sendFile('filepath/to/404page.html')  // Serves static file
+  })
+
+Interrupt levels
+  When killing a process, there are increasing levels of urgency:
+    1 - "Hey man, when convenient, if you could kill yourself for me, that'd be swell"
+    5 - "I'm going to kill you, but take a minute to call your wife and child processes"
+    10 - Murder
+  POSIX Signals
+    ex) SIGINT, SIGTERM, SIGKILL, SIGBREAK
+
+In the beggining, there was UNIX
+  UNIX then forked into
+    - Linux (PC)
+    - FreeBSD (Mac)
