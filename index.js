@@ -64,14 +64,14 @@ app.listen(PORT, () => {
 })
 
 function gracefulShutdown() {
-  console.log('gracefulShutdown()')
+  // Clean up and prepare to die
+  // ...
+
   server.close(() => {
-    console.log('server.close callback')
+    console.log('Server is closed')
   })
-  console.log('after server.close')
 }
 
 process.on('SIGINT', () => {
-  console.log('Received SIGINT signal')
   gracefulShutdown()
 })
