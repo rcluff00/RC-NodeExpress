@@ -11,3 +11,7 @@ If a static file has the same path as a .get() path:
   It will serve whichever comes first in the code, either
   "app.use(express.static('public'))"
   or the "app.get()"
+  // Generally best to have the static in your code first, so it
+  // doesn't have to search through all the routes to check for
+  // a matching path
+
