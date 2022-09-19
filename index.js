@@ -56,13 +56,22 @@ app.get('/api/v1/logs', (req, res, err) => {
 
 app.get('*', (req, res, err) => {
   res.send(`File not found. Sorry bud`)
-  res.sendFile('filepath/to/404page.html')
+  // res.sendFile('filepath/to/404page.html')
 })
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
 
+function gracefulShutdown() {
+  console.log('gracefulShutdown()')
+  server.close(() => {
+    console.log('server.close callback')
+  })
+  console.log('after server.close')
+}
+
 process.on('SIGINT', () => {
   console.log('Received SIGINT signal')
+  gracefulShutdown()
 })
