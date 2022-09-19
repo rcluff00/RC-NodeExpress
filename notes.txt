@@ -1,1 +1,13 @@
-helmet.js
+Helmet.js
+  https://helmetjs.github.io/
+
+  npm install helmet
+
+  //js
+  const helmet = require("helmet")
+  app.use(helmet())
+
+If a static file has the same path as a .get() path:
+  It will serve whichever comes first in the code, either
+  "app.use(express.static('public'))"
+  or the "app.get()"
