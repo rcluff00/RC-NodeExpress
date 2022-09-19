@@ -55,7 +55,7 @@ app.get('/api/v1/logs', (req, res, err) => {
 // })
 
 app.get('*', (req, res, err) => {
-  res.send(`File not found. Sorry bud`)
+  res.send(`File not found. Sorry bud.`)
   // res.sendFile('filepath/to/404page.html')
 })
 
