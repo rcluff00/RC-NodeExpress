@@ -54,6 +54,10 @@ app.get('/api/v1/logs', (req, res, err) => {
 //   res.send('Hello World!')
 // })
 
+app.get('*', (req, res, err) => {
+  res.send(`File not found. Sorry bud`)
+})
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
