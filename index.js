@@ -72,6 +72,4 @@ function gracefulShutdown() {
   })
 }
 
-process.on('SIGINT', () => {
-  gracefulShutdown()
-})
+process.on('SIGINT', gracefulShutdown)

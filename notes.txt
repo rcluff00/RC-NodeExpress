@@ -28,6 +28,11 @@ Interrupt levels
     10 - Murder
   POSIX Signals
     ex) SIGINT, SIGTERM, SIGKILL, SIGBREAK
+  
+  process.on('SIGINT', () => {
+    console.log('SIGINT received, gonna kill stuff now')
+    gracefulShutdown() // function written to die gracefully
+  })
 
 In the beggining, there was UNIX
   UNIX then forked into
