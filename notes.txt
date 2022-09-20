@@ -38,3 +38,19 @@ In the beggining, there was UNIX
   UNIX then forked into
     - Linux (PC)
     - FreeBSD (Mac)
+
+Next practicum:
+  Web Sockets
+  Multiple devices communicating on the same server
+    to play 'Rock, Paper, Scissors'
+  Use Socket.io Library
+
+Arrays:
+  Indexed Array
+    Number is the key
+    ex) dogs[i]
+  Associative Array
+    String is the key
+    ex) dogs['pug']
+    ex) let foo = {}
+        foo['spock']['paper'] = 'Paper disproves spock'
